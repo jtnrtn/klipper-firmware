@@ -8,16 +8,13 @@
 >
 > Use at your own risk!
 
-Klipper config for CR-10S printer with the following modifications that impact firmware configuration:
-- SKR 1.3 board
-- TMC2209 drivers
-- BondTech BMG Extruder
-- Mosquito Magnum hotend (including Mosquito high temperature sensor and heater cartridge)
-- 3DFused x, y and z linear rail kits
-- 3DFused z-braces
-- EZABL Pro
-- 24V PSU
-- Moons MS17HA6P4200-06 0.9 deg steppers on X/Y, and Mons MS17HD6P4200-29 1.8 deg steppers on Z/Z1
+Klipper config for MakerFarm Pegasus 8" printer with the following modifications that impact firmware configuration:
+- SKR 1.4 board
+- TMC2209 drivers on XYZ
+- A4988 driver on E0
+- Pegasus Direct Drive Extruder
+- E3D Lite6 hotend
+- 12V PSU
 
 Includes the following macros
 - START_PRINT : to be called at start of each print.  Homes, loads the bed mesh profile, then calls PRIME_LINE
